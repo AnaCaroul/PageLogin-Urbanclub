@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="cadastro_produto.css">
+    <title> Cadastro de produtos | Urban Club </title>
+</head>
+<body>
+
+    <form action="">
+        <h2> CADASTRO DE PRODUTOS URBAN CLUB </h2>
+        <label class="lblForm"> Código do produto:  </label> 
+        <input type="text" id="cod" name="cod" placeholder="Digite aqui o codigo do produto...">
+
+        <label class="lblForm"> Nome do produto:  </label> 
+        <input type="text" id="produto" name="produto" placeholder="Digite o nome do produto...">
+
+        <label class="lblForm"> Quantidade:  </label> 
+        <input type="text" id="Quantidade" name="quantidade" placeholder="Quantidade no estoque...">
+
+        <label for="dinheiro" class="lblForm"> Preço de compra:  </label> 
+        <input type="text" id="dinheiro" name="Preço_de_compra" placeholder="R$" onkeyup=moeda(this)>
+
+        <label for="dinheiro" class="lblForm"> Confirmação de senha:  </label> 
+        <input type="text" id="dinheiro" name="Preco_de_venda" placeholder="R$" onkeyup=moeda(this)>
+               
+        <button type="button" id="btnEntrar" onclick="EnviarProduto()">CADASTRAR</button>
+      
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

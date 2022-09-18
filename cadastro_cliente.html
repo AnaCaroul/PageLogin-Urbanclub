@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="cadastro_cliente.css">
+    <title> Cadastro de Cliente | Urban Club </title>
+</head>
+<body>
+
+    <form action="">
+        <h2> CADASTRO DE CLIENTE URBAN CLUB </h2>
+        <label class="lblForm"> Nome Completo:  </label> 
+        <input type="text" id="name" name="nome" placeholder="Digite aqui seu nome completo...">
+
+        <label class="lblForm"> Email:  </label> 
+        <input type="text" id="email" name="email" placeholder="Digite seu email...">
+
+        <label class="lblForm"> Telefone:  </label> 
+        <input type="text" id="tel" name="telefone" placeholder="(31)99999-9999"  oninput="mascara_telefone()" maxlegth="14">
+
+        <label class="lblForm"> Senha:  </label> 
+        <input type="password" id="password" name="senha" placeholder="Crie uma senha...">
+
+        <label class="lblForm"> Confirmação de senha:  </label> 
+        <input type="password" id="passwordConfirm" name="Confirm_senha" placeholder="Confirme sua senha...">
+       
+        <label>  <a id="cadastro" href="cadastro_adm.html" > Não é cliente? cadastre-se como adm! </a></label>        
+        <button type="button" id="btnEntrar" onclick="EnviarCliente()">CADASTRAR</button>
+      
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
